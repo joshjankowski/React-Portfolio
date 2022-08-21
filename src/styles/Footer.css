@@ -1,0 +1,14 @@
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    background-color: rgba(30, 57, 74, 0.433);
+    height: 6em;
+    width: 100%;
+  }
+
+  .footer {
+    margin: 1.5rem;
+    display: flex;
+  }

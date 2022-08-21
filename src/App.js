@@ -1,4 +1,11 @@
 import NavBar from './components/NavBar';
+import Resume from './components/Resume';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import { useState } from 'react';
+import './styles/App.css';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -8,8 +15,8 @@ function App() {
     if (currentPage === 'Home') {
       return <Home />;
     }
-    if (currentPage === 'About') {
-      return <About />;
+    if (currentPage === 'Projects') {
+      return <Projects />;
     }
     if (currentPage === 'Resume') {
       return <Resume />;
@@ -26,6 +33,7 @@ function App() {
     <div className="App">
       <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer />
     </div>
   );
 }
